@@ -1,12 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author sebah
- */
 public class TextAnalyzer {
     
     
@@ -32,5 +24,23 @@ public class TextAnalyzer {
                 count++;
         }
      return count;
+    }
+    
+    public int countVowels(String text){
+          int count=0;
+        text = text.toLowerCase();
+        for (int i=0; i<text.length(); i++) {
+               char c = text.charAt(i);
+               switch (c) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        count++;
+        break;
+}   
+        }
+        return count;
     }
 }

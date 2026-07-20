@@ -9,9 +9,12 @@ String text = "El analizador de texto cuenta palabras y caracteres usando Java e
        
 int characters = analyzer.countCharacters(text);
         int words = analyzer.countWords(text);
+        int vowels = analyzer.countVowels(text);
 
         System.out.println("Texto: " + text);
         System.out.println("Caracteres: " + characters);
         System.out.println("Palabras: " + words);
+          System.out.println("Vocales: " + vowels);
+        
     }
 }
