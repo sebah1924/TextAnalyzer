@@ -28,19 +28,38 @@ public class TextAnalyzer {
     
     public int countVowels(String text){
           int count=0;
-        text = text.toLowerCase();
+        
         for (int i=0; i<text.length(); i++) {
                char c = text.charAt(i);
-               switch (c) {
+               if(isVowel(c))
+                   count++;
+        }
+        return count;
+    }
+    
+    public int countConsonants(String text) {
+         int count=0;
+        
+        for (int i=0; i<text.length(); i++) {
+               char c = text.charAt(i);
+               if (Character.isLetter(c) && !isVowel(c) ) 
+                   count++;
+    }
+    return count;
+}
+private boolean isVowel(char c) {
+    boolean vowel=false;
+    c=Character.toLowerCase(c);
+             switch (c) {
     case 'a':
     case 'e':
     case 'i':
     case 'o':
     case 'u':
-        count++;
-        break;
+        vowel =true;
+        return true;
 }   
-        }
-        return count;
-    }
+             return vowel;
 }
+}
+
