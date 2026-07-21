@@ -11,12 +11,15 @@ int characters = analyzer.countCharacters(text);
         int words = analyzer.countWords(text);
         int vowels = analyzer.countVowels(text);
         int consonants= analyzer.countConsonants(text);
+        String reversed= analyzer.reverseText(text);
 
         System.out.println("Texto: " + text);
         System.out.println("Caracteres: " + characters);
         System.out.println("Palabras: " + words);
-          System.out.println("Vocales: " + vowels);
-              System.out.println("Consonantes: " + consonants);
+        System.out.println("Vocales: " + vowels);
+        System.out.println("Consonantes: " + consonants);
+         System.out.println("Reverso: " +reversed);
+        
         
     }
 }

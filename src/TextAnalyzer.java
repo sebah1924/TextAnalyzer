@@ -61,5 +61,17 @@ private boolean isVowel(char c) {
 }   
              return vowel;
 }
+
+public String reverseText (String text){
+    String reverse= "";
+    for (int i=text.length()-1; i>=0; i--) {
+             char c = text.charAt(i);
+             reverse+=c;
+        
+    }
+return reverse;
 }
+
+}
+
 
